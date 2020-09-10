@@ -12,7 +12,7 @@ return (
   <div>
     <p>Hello world, greetings {name}!!! It is now{now.toString()}</p>
     <p>
-      {a} + {b} = {a + b}
+      {a} + {b} + {a} = {a + b + a}
     </p>
   </div> )
 }
