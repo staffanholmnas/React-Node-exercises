@@ -10,7 +10,7 @@ const Hello = (props) => {
   const b = 20
   return (
     <>
-      <p>Hello world, greetings {props.name}!!! It is now{now.toString()}</p>
+      <p>Hello world, greetings {props.name}!!!! It is now{now.toString()}</p>
       <p>You are {props.age} years old.</p>
       <p>
         {a} + {b} + {a} = {a + b + a}
@@ -25,7 +25,7 @@ const App = () => {
   return (
     <>
       <h1>Greetings</h1>
-      <Hello name="Brittany" age={15 + 2} />
+      <Hello name="Tiffany" age={15 + 2} />
       <Hello name="Steve" age={age + 35} />
       <Hello name={name} age={age} />
     </>
