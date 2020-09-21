@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 
-
-
 const Display = props => <div>{props.value}</div>
 
 const Button = (props) => (
