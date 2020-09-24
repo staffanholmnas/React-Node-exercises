@@ -6,7 +6,7 @@ const Note = ({ note, toggleImportance }) => {
 
   return (
     <div>
-      <li className="note">
+      <li className='note'>
         {note.content}
         <button onClick={toggleImportance}>{label}</button>
       </li>

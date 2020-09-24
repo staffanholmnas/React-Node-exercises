@@ -21,7 +21,7 @@
     {
       "content": "Add a new note",
       "date": "2020-09-23T19:24:21.630Z",
-      "important": true,
+      "important": false,
       "id": 4
     },
     {
@@ -39,7 +39,7 @@
     {
       "content": "where is the  button",
       "date": "2020-09-23T19:39:42.979Z",
-      "important": false,
+      "important": true,
       "id": 7
     },
     {
@@ -51,7 +51,7 @@
     {
       "content": "ada lovelace",
       "date": "2020-09-23T19:39:51.213Z",
-      "important": true,
+      "important": false,
       "id": 9
     },
     {
@@ -67,28 +67,52 @@
       "id": 11
     },
     {
-      "content": "poop",
-      "date": "2020-09-23T19:39:57.513Z",
+      "content": "Add new note",
+      "date": "2020-09-24T11:55:30.119Z",
       "important": true,
       "id": 12
     },
     {
-      "content": "Add note 3",
-      "date": "2020-09-24T07:27:17.825Z",
-      "important": false,
+      "content": "write note",
+      "date": "2020-09-24T11:56:17.719Z",
+      "important": true,
+      "id": 13
+    },
+    {
+      "content": "Super note",
+      "date": "2020-09-24T11:56:38.735Z",
+      "important": true,
       "id": 14
     },
     {
-      "content": "Writing something...",
-      "date": "2020-09-24T07:57:54.903Z",
+      "content": "What is this now",
+      "date": "2020-09-24T11:57:07.367Z",
       "important": false,
       "id": 15
     },
     {
-      "content": "lime",
-      "date": "2020-09-24T09:50:31.121Z",
-      "important": false,
+      "content": "can I add votes",
+      "date": "2020-09-24T11:57:15.703Z",
+      "important": true,
       "id": 16
+    },
+    {
+      "content": "Why is this not working as intended",
+      "date": "2020-09-24T12:04:34.144Z",
+      "important": false,
+      "id": 17
+    },
+    {
+      "content": "Woop",
+      "date": "2020-09-24T12:04:40.575Z",
+      "important": false,
+      "id": 18
+    },
+    {
+      "content": "woop woop",
+      "date": "2020-09-24T12:07:02.264Z",
+      "important": true,
+      "id": 19
     }
   ]
 }
