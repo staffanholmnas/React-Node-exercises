@@ -71,6 +71,18 @@
       "date": "2020-09-23T19:39:57.513Z",
       "important": true,
       "id": 12
+    },
+    {
+      "content": "Add note 3",
+      "date": "2020-09-24T07:27:17.825Z",
+      "important": false,
+      "id": 14
+    },
+    {
+      "content": "Writing something...",
+      "date": "2020-09-24T07:57:54.903Z",
+      "important": false,
+      "id": 15
     }
   ]
 }
