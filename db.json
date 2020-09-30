@@ -21,13 +21,13 @@
     {
       "content": "Add a new note",
       "date": "2020-09-23T19:24:21.630Z",
-      "important": false,
+      "important": true,
       "id": 4
     },
     {
       "content": "hello",
       "date": "2020-09-23T19:36:38.157Z",
-      "important": false,
+      "important": true,
       "id": 5
     },
     {
@@ -63,56 +63,62 @@
     {
       "content": "bar",
       "date": "2020-09-23T19:39:55.375Z",
-      "important": true,
+      "important": false,
       "id": 11
-    },
-    {
-      "content": "Add new note",
-      "date": "2020-09-24T11:55:30.119Z",
-      "important": true,
-      "id": 12
-    },
-    {
-      "content": "write note",
-      "date": "2020-09-24T11:56:17.719Z",
-      "important": true,
-      "id": 13
     },
     {
       "content": "Super note",
       "date": "2020-09-24T11:56:38.735Z",
-      "important": true,
+      "important": false,
       "id": 14
     },
     {
       "content": "What is this now",
       "date": "2020-09-24T11:57:07.367Z",
-      "important": false,
+      "important": true,
       "id": 15
     },
     {
       "content": "can I add votes",
       "date": "2020-09-24T11:57:15.703Z",
-      "important": true,
+      "important": false,
       "id": 16
     },
     {
       "content": "Why is this not working as intended",
       "date": "2020-09-24T12:04:34.144Z",
-      "important": false,
+      "important": true,
       "id": 17
-    },
-    {
-      "content": "Woop",
-      "date": "2020-09-24T12:04:40.575Z",
-      "important": false,
-      "id": 18
     },
     {
       "content": "woop woop",
       "date": "2020-09-24T12:07:02.264Z",
       "important": true,
       "id": 19
+    },
+    {
+      "content": "Hi there little fella",
+      "date": "2020-09-30T13:53:58.299Z",
+      "important": true,
+      "id": 20
+    },
+    {
+      "content": "Now its working!",
+      "date": "2020-09-30T14:14:26.646Z",
+      "important": true,
+      "id": 23
+    },
+    {
+      "content": "how strange!",
+      "date": "2020-09-30T14:14:31.402Z",
+      "important": true,
+      "id": 24
+    },
+    {
+      "content": "turbo laser",
+      "date": "2020-09-30T17:15:51.965Z",
+      "important": false,
+      "id": 26
     }
   ]
 }
