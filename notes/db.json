@@ -27,7 +27,7 @@
     {
       "content": "hello",
       "date": "2020-09-23T19:36:38.157Z",
-      "important": true,
+      "important": false,
       "id": 5
     },
     {
@@ -51,13 +51,13 @@
     {
       "content": "ada lovelace",
       "date": "2020-09-23T19:39:51.213Z",
-      "important": false,
+      "important": true,
       "id": 9
     },
     {
       "content": "foo",
       "date": "2020-09-23T19:39:54.567Z",
-      "important": false,
+      "important": true,
       "id": 10
     },
     {
@@ -99,7 +99,7 @@
     {
       "content": "Hi there little fella",
       "date": "2020-09-30T13:53:58.299Z",
-      "important": true,
+      "important": false,
       "id": 20
     },
     {
@@ -119,6 +119,12 @@
       "date": "2020-09-30T17:15:51.965Z",
       "important": false,
       "id": 26
+    },
+    {
+      "content": "Hackerman 2000",
+      "date": "2020-10-01T09:24:54.058Z",
+      "important": true,
+      "id": 27
     }
   ]
 }
