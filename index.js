@@ -86,7 +86,7 @@ app.post('/api/notes', (request, response) => {
     })
 
     note.save().then(savedNote => {
-        response.json(savedNote)
+        response.json(savedNote.toJSON)
     })
 })
 
