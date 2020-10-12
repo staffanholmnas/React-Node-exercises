@@ -1,6 +1,22 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const mongoose = require('mongoose')
+
+// DO NOT SAVE YOUR PASSWORD TO GITHUB!!
+const password=33
+const url =
+    `mongodb+srv://fullstack:${password}@cluster0.gwwxi.mongodb.net/note-app?retryWrites=true&w=majority`
+
+mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
+
+const noteSchema = new mongoose.Schema({
+    content: String,
+    date: Date,
+    important: Boolean,
+})
+
+const Note = mongoose.model('Note', noteSchema)
 
 app.use(cors())
 app.use(express.json())
@@ -42,14 +58,10 @@ const requestLogger = (request, response, next) => {
 }
 app.use(requestLogger)
 
-app.get('/api/notes/:id', (request, response) => {
-    const id = Number(request.params.id)
-    const note = notes.find(note => note.id === id)
-    if (note) {
-        response.json(note)
-    } else {
-        response.status(404).end()
-    }
+app.get('/api/notes', (request, response) => {
+    Note.find({}).then(notes => {
+        response.json(notes)
+    })
 })
 
 app.get('/api/notes', (request, response) => {
