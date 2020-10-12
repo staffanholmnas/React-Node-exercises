@@ -48,15 +48,15 @@ app.use(requestLogger)
 
 app.get('/api/notes', (request, response) => {
     Note.find({}).then(notes => {
-        response.json(notes)
+        response.json(notes.map(note => note.toJSON()))
     })
 })
 
 app.get('/api/notes/:id', (request, response) => {
     Note.findById(request.params.id).then(note => {
-        response.json(note)
+      response.json(note.toJSON())
     })
-})
+  })
 
 app.delete('/api/notes/:id', (request, response) => {
     const id = Number(request.params.id)
