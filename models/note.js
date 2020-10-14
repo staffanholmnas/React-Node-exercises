@@ -18,12 +18,10 @@ const noteSchema = new mongoose.Schema({
         minlength: 5,
         required: true
     },
-    date: {
-        type: Date,
-        required: true
-    },
-    important: Boolean
+    date: Date,
+    important: Boolean,
 })
+
 
 noteSchema.set('toJSON', {
     transform: (document, returnedObject) => {
