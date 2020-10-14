@@ -39,18 +39,18 @@ app.use(express.json())
 ]*/
 
 const requestLogger = (request, response, next) => {
-    console.log('Method:', request.method)
-    console.log('Path:  ', request.path)
-    console.log('Body:  ', request.body)
-    console.log('---')
-    next()
+  console.log('Method:', request.method)
+  console.log('Path:  ', request.path)
+  console.log('Body:  ', request.body)
+  console.log('---')
+  next()
 }
 app.use(requestLogger)
 
 app.get('/api/notes', (request, response) => {
-    Note.find({}).then(notes => {
-        response.json(notes.map(note => note.toJSON()))
-    })
+  Note.find({}).then(notes => {
+    response.json(notes.map(note => note.toJSON()))
+  })
 })
 
 app.get('/api/notes/:id', (request, response, next) => {
