@@ -45,6 +45,9 @@ const App = () => {
       .then(returnedNote => {
         setNotes(notes.concat(returnedNote))
         setNewNote('')
+      }).catch(error => {
+        // this is the way to access the error message
+        console.log(error.response.data)
       })
   }
 
