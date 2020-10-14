@@ -89,13 +89,11 @@ app.post('/api/notes', (request, response, next) => {
         date: new Date(),
     })
 
-    note
-        .save()
-        .then(savedNote => savedNote.toJSON())
-        .then(savedAndFormattedNote => {
-            response.json(savedAndFormattedNote)
-        })
-        .catch(error => next(error))
+    note.save()
+    .then(savedNote => {
+      response.json(savedNote.toJSON())
+    })
+    .catch(error => next(error))
 })
 
 app.put('/api/notes/:id', (request, response, next) => {
