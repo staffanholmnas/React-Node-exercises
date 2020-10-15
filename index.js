@@ -1,3 +1,16 @@
+const app = require('./app') // the actual Express application
+const http = require('http')
+const config = require('./utils/config')
+const logger = require('./utils/logger')
+
+const server = http.createServer(app)
+
+server.listen(config.PORT, () => {
+  logger.info(`Server running on port ${config.PORT}`)
+})
+
+
+/*
 const dotenv = require('dotenv')
 dotenv.config()
 const express = require('express')
@@ -11,7 +24,7 @@ app.use(express.static('build'))
 app.use(express.json())
 
 
-/*let notes = [
+let notes = [
     {
         id: 1,
         content: "HTML is easy",
@@ -36,7 +49,7 @@ app.use(express.json())
         date: "2019-05-30T19:20:14.298Z",
         important: true
     }
-]*/
+]
 
 const requestLogger = (request, response, next) => {
   console.log('Method:', request.method)
@@ -73,12 +86,12 @@ app.delete('/api/notes/:id', (request, response, next) => {
     .catch(error => next(error))
 })
 
-/*const generateId = () => {
+const generateId = () => {
     const maxId = notes.length > 0
         ? Math.max(...notes.map(n => n.id))
         : 0
     return maxId + 1
-}*/
+}
 
 app.post('/api/notes', (request, response, next) => {
   const body = request.body
@@ -134,4 +147,4 @@ app.use(errorHandler)
 const PORT = process.env.PORT
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
-})
+})*/
