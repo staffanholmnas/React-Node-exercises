@@ -1,7 +1,8 @@
 POST http://localhost:3001/api/notes/
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBpbHBwaWxvcHBpcyIsImlkIjoiNWY5NTUxNzY3NjAxZmUzMTA0ZDNhZDQwIiwiaWF0IjoxNjAzNjMwOTM4fQ.7_tXcRNj4i0lXOp8QLJUpplQMVDFZA3ydVdooWO2VkI
 
 {
-    "content": "Super note is super",
+    "content": "Add authorized token-attached note!!",
     "important": true
 }
