@@ -16,7 +16,7 @@ notesRouter.post('/', async (request, response) => {
   const body = request.body
 
   const decodedToken = jwt.verify(request.token, process.env.SECRET)
-  
+
   if (!request.token || !decodedToken.id) {
     return response.status(401).json({ error: 'token missing or invalid' })
   }
@@ -61,8 +61,22 @@ notesRouter.put('/:id', (request, response, next) => {
 })
 
 notesRouter.delete('/:id', async (request, response) => {
-  await Note.findByIdAndRemove(request.params.id)
-  response.status(204).end()
+
+  const decodedToken = jwt.verify(request.token, process.env.SECRET)
+  
+  if (!request.token || !decodedToken.id) {
+    return response.status(401).json({ error: 'token missing or invalid' })
+  }
+  const userid = decodedToken.id
+
+  const note = await Note.findById(request.params.id)
+
+  if (note.user.toString() === userid.toString()) {
+    await Note.findByIdAndRemove(request.params.id)
+    response.status(204).end()
+  } else {
+    response.status(400).json({ error: 'wrong token or user' })
+  }
 })
 
 module.exports = notesRouter
